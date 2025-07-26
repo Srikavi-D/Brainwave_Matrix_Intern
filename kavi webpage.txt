@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elegant Threads</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Elegant Threads</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content" id="home">
+      <h1>Discover Your Style</h1>
+      <p>Trendy Dresses for Every Occasion</p>
+      <a href="#collection" class="btn">Shop Now</a>
+    </div>
+  </header>
+
+  <section class="collection" id="collection">
+    <h2>Featured Collection</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600102427329-d5b2cde7e162?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTM0NjQwMDV8&ixlib=rb-4.1.0&q=85" alt="Dress 1">
+        <h3>Floral Summer Dress</h3>
+        <p>$45.00</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1583333001978-8c57d752ce5b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTM0NjQxNDl8&ixlib=rb-4.1.0&q=85" alt="Dress 2">
+        <h3>Elegant Evening Gown</h3>
+        <p>$120.00</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1735666094357-d591d7179106?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTM0NjQzMDZ8&ixlib=rb-4.1.0&q=85" alt="Dress 3">
+        <h3>Casual Chic Dress</h3>
+        <p>$65.00</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>At Elegant Threads, we believe fashion should be both elegant and comfortable. We curate premium quality dresses designed to empower women through style.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Elegant Threads. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+css
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fffefc;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header.hero {
+  background: linear-gradient(to right, #f9c5d1, #9795ef);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #222;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* Collection Section */
+.collection {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.collection h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-card {
+  background: #f9f9f9;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 15px 0 5px;
+}
+
+.about, .contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff2f2;
+}
+
+.about h2, .contact h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #9795ef;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #6c63ff;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+js
+
+
+// Smooth scroll for navigation
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 50,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// Form submission (demo)
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Thank you for contacting us!');
+  this.reset();
+});
